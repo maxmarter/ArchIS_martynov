@@ -82,7 +82,7 @@ Rel(blog_service, db, "INSERT/SELECT/UPDATE", "SQL")
 
 class Wall {
   id
-  count_post
+  id_post
 }
 
 class User {
@@ -92,6 +92,8 @@ class User {
   last_name
   email
   title
+  id_wall
+
 }
 
 class Post {
@@ -103,6 +105,7 @@ class Post {
 
 class Chat {
   id
+  id_message
   first_person_id
   second_person_id
 }
@@ -110,7 +113,7 @@ class Message {
   id
   body
   date
-  author_id
+
 }
 Message -> Chat
 Wall -> User
